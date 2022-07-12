@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'allauth.account',
     # allauth social login
     'allauth.socialaccount',
+    'home', # home app
 ]
 
 MIDDLEWARE = [
@@ -68,7 +69,12 @@ ROOT_URLCONF = 'melo_merch.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            # root templates
+            os.path.join(BASE_DIR, 'templates'),
+            # custom allauth templates
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
