@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     # allauth
     'allauth',
+    # allauth log in/out, reg, pw resets
     'allauth.account',
+    # allauth social login
     'allauth.socialaccount',
 ]
 
@@ -64,7 +66,8 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                # allow access to http request object in templates
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -82,6 +85,9 @@ AUTHENTICATION_BACKENDS = (
 )
 
 SITE_ID = 1
+
+# log email confirmation links to the console
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 WSGI_APPLICATION = 'melo_merch.wsgi.application'
 
