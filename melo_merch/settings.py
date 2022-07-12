@@ -89,6 +89,19 @@ SITE_ID = 1
 # log email confirmation links to the console
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+# allow auth via username/email
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True # required field
+# email verification mandatory
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+# retype email when registering
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+# min user length 4 chars
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+LOGIN_URL = '/accounts/login/'
+# redirect to home
+LOGIN_REDIRECT_URL = '/'
+
 WSGI_APPLICATION = 'melo_merch.wsgi.application'
 
 
