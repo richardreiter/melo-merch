@@ -9,6 +9,13 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
+
+"""
+Many thanks to Chris Zielinski and CI's 'Boutique Ado'
+Walkthrough project - a great reference, inspiration and example:
+https://github.com/Code-Institute-Solutions/boutique_ado_v1
+"""
+
 import os
 from pathlib import Path
 
