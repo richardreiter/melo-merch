@@ -51,8 +51,8 @@ INSTALLED_APPS = [
     'allauth.account',
     # allauth social login
     'allauth.socialaccount',
-    'home', # home app
-    'products', # products app
+    'home',  # home app
+    'products',  # products app
 ]
 
 MIDDLEWARE = [
@@ -105,7 +105,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # allow auth via username/email
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
-ACCOUNT_EMAIL_REQUIRED = True # required field
+ACCOUNT_EMAIL_REQUIRED = True  # required field
 # email verification mandatory
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 # retype email when registering
