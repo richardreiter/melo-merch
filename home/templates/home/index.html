@@ -1,6 +1,33 @@
 {% extends "base.html" %}
 {% load static %}
 
+<!-- Many thanks to Chris Zielinski and CI's 'Boutique Ado'
+Walkthrough project - a great reference, inspiration and example:
+https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
+{% block page_header %}
+<!-- bootstrap grid -->
+<div class="container header-container">
+    <div class="row">
+        <div class="col">
+
+        </div>
+    </div>
+</div>
+{% endblock %}
+
 {% block content %}
-<h1 class="display-4 text-success">Testing</h1>
-{% endblock %} 
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-7 col-md-6 my-auto">
+            <h1 class="display-4 logo-font text-black">
+                New merch drop
+            </h1>
+            <div class="my-5">
+                <h4>
+                    <a href="" class="shop-now-button btn-lg rounded-0 text-uppercase py-3">Check it out now</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
