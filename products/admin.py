@@ -8,5 +8,29 @@ Walkthrough project - a great reference, inspiration and example:
 https://github.com/Code-Institute-Solutions/boutique_ado_v1
 """
 # Register your models here.
-admin.site.register(Product)
-admin.site.register(Category)
+
+
+class ProductAdmin(admin.ModelAdmin):
+    # fields to display within admin dash
+    list_display = (
+        'sku',
+        'name',
+        'category',
+        'price',
+        'rating',
+        'image',
+    )
+    # sort products by sku
+    ordering = ('sku',)
+
+
+class CategoryAdmin(admin.ModelAdmin):
+    # fields to display within admin dash
+    list_display = (
+        'friendly_name',
+        'name',
+    )
+
+
+admin.site.register(Product, ProductAdmin)
+admin.site.register(Category, CategoryAdmin)
