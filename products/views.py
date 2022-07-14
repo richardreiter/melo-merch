@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 # object to generate search query
 from django.db.models import Q
-from .models import Product
+from .models import Product, Category
 
 # Create your views here.
 """
@@ -22,8 +22,20 @@ def all_products(request):
     products = Product.objects.all()
     # to avoid error when loading products page without search
     query = None
+    categories = None
 
     if request.GET:
+        if 'category' in request.GET:
+            # split into a list at the commas
+            categories = request.GET['category'].split(',')
+            # use list to filter current query set
+            # of all products to only whose category
+            # name is in the list
+            products = products.filter(category__name__in=categories)
+            # filter category down to the ones
+            # whose name is in the list from url
+            categories = Category.objects.filter(name__in=categories)
+
         # if text input q
         if 'q' in request.GET:
             query = request.GET['q']
@@ -39,6 +51,7 @@ def all_products(request):
     context = {
         'products': products,
         'search_term': query,
+        'current_categories': categories,
     }
 
     return render(request, 'products/products.html', context)
