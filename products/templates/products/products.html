@@ -34,12 +34,12 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
                     <div class="card h-100 border-0">
                         {% if product.image %}
                         <!-- render image using its url -->
-                        <a href="">
+                        <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                         </a>
                         {% else %}
                         <!-- if not image load noimage png -->
-                        <a href="">
+                        <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
                                 alt="{{ product.name }}">
                         </a>
