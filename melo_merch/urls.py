@@ -13,6 +13,11 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+"""
+Many thanks to Chris Zielinski and CI's 'Boutique Ado'
+Walkthrough project - a great reference, inspiration and example:
+https://github.com/Code-Institute-Solutions/boutique_ado_v1
+"""
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
@@ -23,4 +28,5 @@ urlpatterns = [
     # include allauth urls (logins/resets)
     path('accounts/', include('allauth.urls')),
     path('', include('home.urls')),
+    path('products/', include('products.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
