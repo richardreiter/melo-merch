@@ -34,7 +34,8 @@ def all_products(request):
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
-
+            if sortkey == 'category':
+                sortkey = 'category__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
@@ -58,11 +59,11 @@ def all_products(request):
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
-            # case insensitive and name or description 
+            # case insensitive and name or description
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             # filter method to filter products
             products = products.filter(queries)
-    
+
     current_sorting = f'{sort}_{direction}'
 
     # products to be available in template
