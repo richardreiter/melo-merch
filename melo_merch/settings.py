@@ -85,6 +85,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # cart content available in all templates
+                'cart.contexts.cart_contents',
             ],
         },
     },
@@ -179,3 +181,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# vars to calculate delivery
+FREE_DELIVERY_THRESHOLDS = 50
+STANDARD_DELIVERY_PERCENTAGE = 10
