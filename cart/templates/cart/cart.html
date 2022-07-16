@@ -27,6 +27,10 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
         <div class="col">
             <!-- if shopping items render table -->
             {% if cart_items %}
+                {{ cart_items }}
+                <br>
+                <br>
+                {{ request.session.cart }}
                 <div class="table-responsive rounded">
                     <table class="table table-sm table-borderless">
                         <thead class="text-black">
