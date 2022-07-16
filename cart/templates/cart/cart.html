@@ -27,7 +27,9 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
         <div class="col">
             <!-- if shopping items render table -->
             {% if cart_items %}
-                <div class="table-responsive rounded"></div>
+                <div class="table-responsive rounded">
+                    
+                </div>
             {% else %}
                 <p class="lead mb-5">Your cart is empty.</p>
                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">

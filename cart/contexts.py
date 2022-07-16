@@ -1,5 +1,7 @@
 from decimal import Decimal
 from django.conf import settings
+from django.shortcuts import get_object_or_404
+from products.models import Product
 
 """
 Many thanks to Chris Zielinski and CI's 'Boutique Ado'
@@ -14,6 +16,23 @@ def cart_contents(request):
     cart_items = []
     total = 0
     product_count = 0
+    # create an empty library if there are no items in the cart
+    cart = request.session.get('cart', {})
+
+    # for each item id and quantity in cart items
+    for item_id, quantity in cart.items():
+        # get product
+        product = get_object_or_404(Product, pk=item_id)
+        # add its quantity times the total price
+        total += quantity * product.price
+        # increment count by quantity
+        product_count += quantity
+        # add dict to cart list
+        cart_items.append({
+            'item_id': item_id,
+            'quantity': quantity,
+            'product': product,
+        })
 
     # delivery logic
     if total < settings.FREE_DELIVERY_THRESHOLDS:
