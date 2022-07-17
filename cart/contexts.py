@@ -31,7 +31,7 @@ def cart_contents(request):
             # add dict to cart list
             cart_items.append({
                 'item_id': item_id,
-                'quantity': quantity,
+                'quantity': item_data,
                 'product': product,
             })
         # if its a dict
