@@ -148,7 +148,22 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
 
     <!-- display messages -->
     {% if messages %}
-    <div class="message-container"></div>
+    <div class="message-container">
+        {% for message in messages %}
+            <!-- check level of msg to render appropriate toast -->
+            {% with message.level as level %}
+                {% if level == 40 %}
+                    {% include 'includes/toasts/toast_error.html' %}
+                {% elif level == 30 %}
+                    {% include 'includes/toasts/toast_warning.html' %}
+                {% elif level == 25 %}
+                    {% include 'includes/toasts/toast_success.html' %}
+                {% else %}
+                    {% include 'includes/toasts/toast_info.html' %}
+                {% endif %}
+            {% endwith %}
+        {% endfor %}
+    </div>
     {% endif %}
 
     {% block page_header %}
@@ -158,6 +173,10 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
     {% endblock %}
 
     {% block postloadjs %}
+        <!-- js script to show the toast -->
+        <script type="text/javascript">
+            $('.toast').toast('show');
+        </script>
     {% endblock %}
 
 
