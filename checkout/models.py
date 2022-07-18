@@ -72,17 +72,10 @@ class Order(models.Model):
         return self.order_number
 
 
-"""
-Many thanks to Chris Zielinski and CI's 'Boutique Ado'
-Walkthrough project - a great reference, inspiration and example:
-https://github.com/Code-Institute-Solutions/boutique_ado_v1
-"""
-
-
 class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
     product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
-    product_size = models.CharField(max_length=2, null=True, blank=True) # S, M, L
+    product_size = models.CharField(max_length=2, null=True, blank=True)  # S, M, L
     quantity = models.IntegerField(null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
 
