@@ -5,9 +5,9 @@
     CSS from here: 
     https://stripe.com/docs/stripe-js
 
-Many thanks to Chris Zielinski and CI's 'Boutique Ado'
-Walkthrough project - a great reference, inspiration and example:
-https://github.com/Code-Institute-Solutions/boutique_ado_v1
+    Many thanks to Chris Zielinski and CI's 'Boutique Ado'
+    Walkthrough project - a great reference, inspiration and example:
+    https://github.com/Code-Institute-Solutions/boutique_ado_v1
 */
 
 var stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
@@ -57,6 +57,10 @@ form.addEventListener('submit', function(ev) {
     // disable to prevent multiple submissions
     card.update({ 'disabled': true});
     $('#submit-button').attr('disabled', true);
+    // fade out form
+    $('#payment-form').fadeToggle(100);
+    // trigger overlay
+    $('#loading-overlay').fadeToggle(100);
     // method to securely send card info to stripe
     stripe.confirmCardPayment(clientSecret, {
         payment_method: {
@@ -71,6 +75,10 @@ form.addEventListener('submit', function(ev) {
                 </span>
                 <span>${result.error.message}</span>`;
             $(errorDiv).html(html);
+            // reverse fade
+            $('#payment-form').fadeToggle(100);
+            // reverse overlay
+            $('#loading-overlay').fadeToggle(100);
             // if there's error re enable so user can fix
             card.update({ 'disabled': false});
             $('#submit-button').attr('disabled', false);
