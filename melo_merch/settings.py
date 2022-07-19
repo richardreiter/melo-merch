@@ -55,6 +55,9 @@ INSTALLED_APPS = [
     'products',  # products app
     'cart',  # cart app
     'checkout',  # checkout app
+
+    # Other
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -68,6 +71,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'melo_merch.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
@@ -86,9 +91,16 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # to access no media file in media folder
+                'django.template.context_processors.media',
                 # cart content available in all templates
                 'cart.contexts.cart_contents',
             ],
+            # to be available in all templates by default
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
