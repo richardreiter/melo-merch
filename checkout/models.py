@@ -8,6 +8,7 @@ from django.conf import settings
 from django_countries.fields import CountryField
 
 from products.models import Product
+from users.models import UserProfile
 
 
 """
@@ -20,6 +21,10 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1
 class Order(models.Model):
     # unique/not editable
     order_number = models.CharField(max_length=32, null=False, editable=False)
+    # use SET_NULL in case profile is deleted, keep order history
+    # either null or blank so users with no account can still purchase
+    user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
+                                     null=True, blank=True, related_name='orders')
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     phone_number = models.CharField(max_length=20, null=False, blank=False)
