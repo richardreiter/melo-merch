@@ -1,0 +1,20 @@
+/* Many thanks to Chris Zielinski and CI's 'Boutique Ado'
+Walkthrough project - a great reference, inspiration and example:
+https://github.com/Code-Institute-Solutions/boutique_ado_v1 */
+
+#profile-update-form .form-control {
+    color: #000;
+}
+
+#profile-update-form input::placeholder {
+    color: #aab7c4;
+}
+
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #000;
+}
+
+#id_default_country option:first-child {
+    color: #aab7c4;
+}

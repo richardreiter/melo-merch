@@ -19,7 +19,7 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
             </div>
         </div>
         <!-- preview of the cart -->
-        {% if grand_total %}
+        {% if grand_total and not on_profile_page %}
             <p class="logo-font bg-white text-black py-1">Your Cart ({{ product_count }})</p>
             <div class="cart-notification-wrapper">
                 {% for item in cart_items %}
