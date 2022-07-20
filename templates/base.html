@@ -98,7 +98,7 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
                             <a href="" class="dropdown-item">Product Management</a>
                             {% endif %}
                             <!-- display profile and logout -->
-                            <a href="" class="dropdown-item">My Profile</a>
+                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             <!-- otherwise display options to register/login -->
                             {% else %}

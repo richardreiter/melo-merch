@@ -1,11 +1,16 @@
 {% extends "account/base.html" %}
 
+<!-- Many thanks to Chris Zielinski and CI's 'Boutique Ado'
+Walkthrough project - a great reference, inspiration and example:
+https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
 {% load i18n %}
 
 {% block head_title %}{% trans "Account Inactive" %}{% endblock %}
 
-{% block content %}
-<h1>{% trans "Account Inactive" %}</h1>
+{% block inner_content %}
+<hr>
+<h2 class="logo-font mb-4">{% trans "Account Inactive" %}</h2>
+<hr>
 
 <p>{% trans "This account is inactive." %}</p>
 {% endblock %}
