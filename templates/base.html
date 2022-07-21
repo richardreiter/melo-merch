@@ -95,7 +95,7 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
                             <!-- and a superuser -->
                             {% if request.user.is_superuser %}
                             <!-- display product management -->
-                            <a href="" class="dropdown-item">Product Management</a>
+                            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                             {% endif %}
                             <!-- display profile and logout -->
                             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
