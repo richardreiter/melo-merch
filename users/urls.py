@@ -10,5 +10,6 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1
 
 
 urlpatterns = [
-    path('', views.profile, name='profile')
+    path('', views.profile, name='profile'),
+    path('order_history/<order_number>', views.order_history, name='order_history'),
 ]

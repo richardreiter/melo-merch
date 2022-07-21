@@ -2,6 +2,11 @@
 Walkthrough project - a great reference, inspiration and example:
 https://github.com/Code-Institute-Solutions/boutique_ado_v1 */
 
+.order-history {
+    max-height: 416px; /* height of profile form + submit button */
+    overflow-y: auto;
+}
+
 #profile-update-form .form-control {
     color: #000;
 }
