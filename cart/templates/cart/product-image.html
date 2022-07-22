@@ -1,0 +1,8 @@
+<!-- Many thanks to Chris Zielinski and CI's 'Boutique Ado'
+Walkthrough project - a great reference, inspiration and example:
+https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
+{% if item.product.image %}
+<img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+{% else %}
+<img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+{% endif %}
