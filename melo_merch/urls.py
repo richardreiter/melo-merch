@@ -1,3 +1,9 @@
+from django.contrib import admin
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
+
+
 """melo_merch URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -18,10 +24,6 @@ Many thanks to Chris Zielinski and CI's 'Boutique Ado'
 Walkthrough project - a great reference, inspiration and example:
 https://github.com/Code-Institute-Solutions/boutique_ado_v1
 """
-from django.contrib import admin
-from django.urls import path, include
-from django.conf import settings
-from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),

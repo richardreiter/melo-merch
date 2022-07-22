@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse
+)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -101,13 +103,16 @@ def checkout(request):
                 # throw error message if prod not found
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your cart wasn't found in our database. "
+                        "One of the products in your cart \
+                            wasn't found in our database. "
                         "Please call us for assistance!")
                     )
                     # delete empty order
                     order.delete()
                     # return to shopping cart page
-                    return redirect(reverse('view_cart'))
+                    return redirect(
+                        reverse('view_cart')
+                        )
             # give option to user to save prof info to session
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
@@ -120,7 +125,9 @@ def checkout(request):
         # if cart empty
         if not cart:
             # add error msg
-            messages.error(request, "There's nothing in your cart at the moment")
+            messages.error(
+                request, "There's nothing in your cart at the moment"
+                )
             # redirect prod page
             return redirect(reverse('products'))
 

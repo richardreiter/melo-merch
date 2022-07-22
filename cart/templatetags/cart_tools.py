@@ -9,6 +9,7 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1
 
 register = template.Library()
 
+
 # decorator to register func as template filter
 @register.filter(name='calc_subtotal')
 def calc_subtotal(price, quantity):
