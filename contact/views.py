@@ -31,6 +31,7 @@ def contact(request):
             messages.success(
                 request, 'Thank you for your message! \
                     We will get back to you shortly.')
+            form.save()
             # redirect to contact page url
             return redirect(reverse('contact'))
         else:

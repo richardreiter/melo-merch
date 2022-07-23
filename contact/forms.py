@@ -1,13 +1,14 @@
 from django import forms
+from .models import Contact
 
 
-class ContactForm(forms.Form):
+class ContactForm(forms.ModelForm):
     """
     A contact form for users
     to ask questions and  provide feedback
     to shop owner
     """
-    name = forms.CharField(label='Your name', max_length=100)
-    email = forms.EmailField(widget=forms.EmailInput(), label='Email Address')
-    subject = forms.CharField(label='Subject', max_length=120)
-    message = forms.CharField(label='Message', max_length=900, widget=forms.Textarea())
+    class Meta:
+        model = Contact
+        # include all the fields
+        fields = '__all__'
