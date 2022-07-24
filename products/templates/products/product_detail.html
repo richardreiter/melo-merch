@@ -40,12 +40,12 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
                         <!-- programmatic href -->
                         <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
                             <!-- render using friendly text -->
-                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                            <i class="fas fa-hashtag mr-1"></i>{{ product.category.friendly_name }}
                         </a>
                     </p>
                     {% endif %}
                     {% if product.rating %}
-                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                        <small class="text-muted"><i class="far fa-star mr-1"></i>{{ product.rating }} / 5</small>
                     {% else %}
                         <small class="text-muted">No Rating</small>
                     {% endif %}
