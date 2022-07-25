@@ -35,7 +35,7 @@ SECRET_KEY ='django-insecure-_6u!i+w$p6e*y&9-evri(=$fn3%%xb%z-7ork3)yj%d&imiho&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['melo-merch.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -142,15 +142,20 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'melo_merch.wsgi.application'
 
 
-Database
-https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+# Database
+# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR / 'db.sqlite3'),
+        }
+    }
 
 
 # Password validation
