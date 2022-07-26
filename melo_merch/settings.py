@@ -65,7 +65,23 @@ INSTALLED_APPS = [
     # Other
     'crispy_forms',
     'storages',
+    'django_extensions',
 ]
+
+# To generate data-schema
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+  "app_labels": [
+        "cart",
+        "checkout",
+        "contact",
+        "home",
+        "newsletter",
+        "products",
+        "users",
+    ],
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
