@@ -13,6 +13,9 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Irish underground streetwear for lowkey skateboarders">
+    <meta name="keywords"
+        content="underground streetwear, 90s skater fashion, lowkey streetwear tee, lowkey brand, undeground clothing brand, skateboards ireland, streetwear brand hoodies, pennyboards ireland, skateboarder hats, irish skate shorts">
     {% endblock %}
 
     {% block extra_meta %}
@@ -155,18 +158,18 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
     {% if messages %}
     <div class="message-container">
         {% for message in messages %}
-            <!-- check level of msg to render appropriate toast -->
-            {% with message.level as level %}
-                {% if level == 40 %}
-                    {% include 'includes/toasts/toast_error.html' %}
-                {% elif level == 30 %}
-                    {% include 'includes/toasts/toast_warning.html' %}
-                {% elif level == 25 %}
-                    {% include 'includes/toasts/toast_success.html' %}
-                {% else %}
-                    {% include 'includes/toasts/toast_info.html' %}
-                {% endif %}
-            {% endwith %}
+        <!-- check level of msg to render appropriate toast -->
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
         {% endfor %}
     </div>
     {% endif %}
@@ -177,9 +180,8 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
     {% block content %}
     {% endblock %}
 
-     <!-- Footer -->
-     <footer class="footer fixed-bottom mt-auto py-3">
-        <p class="m-0 text-center text-black-50">&copy; 2022</p>
+    <!-- Footer -->
+    <footer class="footer fixed-bottom mt-auto py-3">
         <p class="m-0 text-center text-black-50">
             <a class="text-black-50" href="https://facebook.com" target="_blank" rel="noopener"
                 aria-label="Visit our Facebook (and opens in a separate tab)"><i class="fab fa-facebook ms-3"></i></a>
@@ -191,10 +193,10 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
     </footer>
 
     {% block postloadjs %}
-        <!-- js script to show the toast -->
-        <script type="text/javascript">
-            $('.toast').toast('show');
-        </script>
+    <!-- js script to show the toast -->
+    <script type="text/javascript">
+        $('.toast').toast('show');
+    </script>
     {% endblock %}
 
 
