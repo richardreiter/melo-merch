@@ -92,7 +92,8 @@ def checkout(request):
                     else:
                         # iterate through each size
                         # and create line item
-                        for size, quantity in item_data['items_by_size'].items():
+                        for size, quantity in item_data['items_by_size'].items(
+                        ):
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,

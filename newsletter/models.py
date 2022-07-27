@@ -14,8 +14,8 @@ class Subscribers(models.Model):
     to database
     """
     class Meta:  # adjust plural form
-            verbose_name_plural = 'Subscribers'
-        
+        verbose_name_plural = 'Subscribers'
+
     # subscriber's email
     email = models.EmailField(max_length=254, null=True)
     # date subscribed
