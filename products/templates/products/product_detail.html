@@ -44,6 +44,9 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
                         </a>
                     </p>
                     {% endif %}
+                    {% if product.is_limited_edition %}
+                        <p class="mb-0">Rare Limited Edition Piece</p>
+                    {% endif %}
                     {% if product.rating %}
                         <small class="text-muted"><i class="far fa-star mr-1"></i>{{ product.rating }} / 5</small>
                     {% else %}
