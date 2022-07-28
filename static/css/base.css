@@ -303,7 +303,7 @@ input[name='q']::placeholder {
     }
 
     .nav-link {
-        padding: 0.15rem;
+        padding: 0;
     }
 
     .nav-link i.fa-lg {
@@ -316,7 +316,7 @@ input[name='q']::placeholder {
     }
 
     #delivery-banner h4 {
-        font-size: .9rem;
+        font-size: .75rem;
     }
 
     .btn.btn-outline-black.rounded-0,
