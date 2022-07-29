@@ -14,6 +14,9 @@ Visit the live site [here.](https://melo-merch.herokuapp.com/)
 
 ### Target Audience
 
+- Anyone who is into streetwear fashion and skateboarding.
+- People looking to purchase a present for someone who's into streetwear/skateboarding.
+
 ### User Stories
 
 ### Wireframes
