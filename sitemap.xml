@@ -9,167 +9,177 @@
 
 <url>
   <loc>https://melo-merch.herokuapp.com/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/accounts/signup/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/accounts/login/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/cart/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/?category=tees</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/?category=hoodies</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/?category=shorts</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/?category=hats</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/?category=tees,hoodies,shorts,hats</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/?category=penny_boards</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/?category=regular_boards</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/?category=long_boards</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/?category=penny_boards,regular_boards,long_boards</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://melo-merch.herokuapp.com/about/</loc>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/newsletter/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://melo-merch.herokuapp.com/faq/</loc>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/contact/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/accounts/password/reset/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/11/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/12/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/6/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://melo-merch.herokuapp.com/products/10/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/4/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://melo-merch.herokuapp.com/products/10/</loc>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/13/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/3/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/5/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/15/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/14/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/8/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/7/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://melo-merch.herokuapp.com/products/9/</loc>
-  <lastmod>2022-07-28T10:01:30+00:00</lastmod>
+  <lastmod>2022-07-29T14:14:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
