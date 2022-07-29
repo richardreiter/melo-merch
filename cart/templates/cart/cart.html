@@ -86,13 +86,13 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1 -->
                             {% include "cart/product-info.html" %}
                         </td>
                         <td class="py-3">
-                            <p class="my-0">${{ item.product.price }}</p>
+                            <p class="my-0">€{{ item.product.price }}</p>
                         </td>
                         <td class="py-3 w-25">
                             {% include "cart/quantity-form.html" %}
                         </td>
                         <td class="py-3">
-                            <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                            <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </td>
                     </tr>
                     {% endfor %}

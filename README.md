@@ -1,5 +1,11 @@
 # Melo Merch
 
+[Melo Merch](https://github.com/richardreiter/melo-merch) is an online Business to Customer e-commerce website dedicated to selling streetwear fashion apparel and skater products such as tees, hoodies, shorts, hats and skateboards.
+
+![Responsive Melo Merch](media/docs/mm-responsiveness.png)
+
+Visit the live site [here.](https://melo-merch.herokuapp.com/)
+
 ## UX (User Experience)
 
 ### Project Goals
