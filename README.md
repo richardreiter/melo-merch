@@ -114,6 +114,11 @@ The database schema was generated with [django-extensions](https://django-extens
 
 ### Design
 
+- The colour scheme is gold old fashion/classic black & white - [contrast passes a11y validation.](https://color.a11y.com/)
+![Color scheme contrast validation](media/docs/a11y-color-contrast.png)
+
+- [Google Fonts](https://fonts.google.com/) was used for the website's font. The Playfair Display font was used as it gives an air of elegance and it's a stylish font.
+
 ## Features
 
 ### Existing Features
