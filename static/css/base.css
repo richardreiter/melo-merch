@@ -311,7 +311,7 @@ input[name='q']::placeholder {
     }
 
     .navbar-toggler {
-        padding: .6rem .6rem;
+        padding: .4rem .4rem;
         font-size: 1rem;
     }
 
