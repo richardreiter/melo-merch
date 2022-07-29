@@ -12,5 +12,6 @@ https://github.com/Code-Institute-Solutions/boutique_ado_v1
 
 urlpatterns = [
     # root url render index named home
-    path('', views.index, name='home')
+    path('', views.index, name='home'),
+    path('faq/', views.faq, name='faq'),
 ]
