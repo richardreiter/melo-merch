@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4 text-black">About Us</h2>
+            <hr>
+            <div class="text-black mb-4">
+                <p>
+                    Founded in 2022, Melo Merch is an emerging streetwear shop, with carefully curated
+                    brands, offering valued consumers everything from Apparel to Skateboards.
+                </p>
+                <p>
+                    We focus on brands that tell a strong story through their products, whether it's the intricacies
+                    within the construction or the boundary-pushing ideas that are displayed through creative direction.
+                    The brands featured at Melo Merch are sourced from all over the world, but we try to mainly focus on
+                    Irish designers.
+                </p>
+                <p>
+                    We hope you enjoy your shopping experience with us and please do not hesitate to <a class="font-weight-bold text-black" href="{% url 'contact' %}">reach out to us</a>
+                    should there be questions, concerns, observations or even styling tips.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -14,4 +14,5 @@ urlpatterns = [
     # root url render index named home
     path('', views.index, name='home'),
     path('faq/', views.faq, name='faq'),
+    path('about/', views.about, name='about'),
 ]

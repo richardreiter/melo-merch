@@ -20,3 +20,9 @@ def faq(request):
     """ A view to return the faq page """
 
     return render(request, 'home/faq.html')
+
+
+def about(request):
+    """ A view to return the about page """
+
+    return render(request, 'home/about.html')
