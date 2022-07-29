@@ -61,6 +61,57 @@ Agile methodology tool:
 
 ### Wireframes
 
+The mockups below were done with the help of Balsamiq (for both desktop and mobile screens), these were useful to help visualise the project.
+
+- Desktop:
+  - Home page
+  ![Home Desktop Mockup](media/docs/desk-wireframe-home.png)
+  - Products page 
+  ![Products Desktop Mockup](media/docs/desk-wireframe-products.png)
+  - Product Detail page
+  ![Products Desktop Mockup](media/docs/desk-wireframe-product-detail.png)
+  - Cart page
+  ![Cart Desktop Mockup](media/docs/desk-wireframe-cart.png)
+  - Checkout page
+  ![Checkout Desktop Mockup](media/docs/desk-wireframe-checkout.png)
+  - Sign Up page
+  ![Sign Up Desktop Mockup](media/docs/desk-wireframe-signup.png)
+  - Login page
+  ![Login Desktop Mockup](media/docs/desk-wireframe-login.png)
+  - About page
+  ![About Desktop Mockup](media/docs/desk-wireframe-about.png)
+  - Subscribe page
+  ![Subscribe Desktop Mockup](media/docs/desk-wireframe-subscribe.png)
+  - FAQ page
+  ![FAQ Desktop Mockup](media/docs/desk-wireframe-faq.png)
+  - Contact page
+  ![Contact Desktop Mockup](media/docs/desk-wireframe-contact.png)
+
+- Mobile:
+  - Home page
+  ![Home Mobile Mockup](media/docs/mobile-wireframe-home.png)
+  - Products page 
+  ![Products Mobile Mockup](media/docs/mobile-wireframe-products.png)
+  - Cart page
+  ![Cart Mobile Mockup](media/docs/mobile-wireframe-cart.png)
+  - Sign Up page
+  ![Sign Up Mobile Mockup](media/docs/mobile-wireframe-signup.png)
+  - Login page
+  ![Login Mobile Mockup](media/docs/mobile-wireframe-login.png)
+  - About page
+  ![About Mobile Mockup](media/docs/mobile-wireframe-about.png)
+  - Subscribe page
+  ![Subscribe Mobile Mockup](media/docs/mobile-wireframe-subscribe.png)
+  - FAQ page
+  ![FAQ Mobile Mockup](media/docs/mobile-wireframe-faq.png)
+  - Contact page
+  ![Contact Mobile Mockup](media/docs/mobile-wireframe-contact.png)
+
+The database schema was generated with [django-extensions](https://django-extensions.readthedocs.io/en/latest/index.html) [Graph models.](https://django-extensions.readthedocs.io/en/latest/graph_models.html)
+
+- Database Schema
+  ![Database Schema](media/docs/mm-db-schema.png)
+
 ### Design
 
 ## Features
