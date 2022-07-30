@@ -123,8 +123,6 @@ The database schema was generated with [django-extensions](https://django-extens
 
 ### Existing Features
 
-Header:
-
 - __Navigation Bar__
 
   - Navigation is a fully responsive feature on all pages (with different versions user's role dependant and whether the user is logged in/out), it includes links on the site's Logo (displaying to the left within the bar), Search Bar in the middle, My Account and Shopping car to the right. All Products, Clothing, Skateboards, About, Subscribe, FAQ and Contact Pages are located under the search bar. The Register and Login pages are located in a submenu upon clicking My Account (the 'Product Management' and "Mail Newsletter" pages/nav links only show up for superusers).
@@ -151,6 +149,18 @@ Header:
 
   - The Free Delivery Banner is there to entice shoppers to purchase more than €50 in order to get free delivery.
     ![Free Delivery Banner](media/docs/mm-free-delivery-banner.png)
+
+- __CTA - Call to Action button__
+
+  - The Shop Now button is there to entice shoppers to take the action of shopping.
+    ![CTA](media/docs/mm-cta.png)
+
+- __Footer__
+
+  - The footer area consists of a link to the site's Privacy Policy and three social links (Facebook, Instagram and Twitter - all of them, if clicked, open on a separate tab).
+  - Like the navigation section, the footer looks the same on each page (and features on all of the pages) to allow for easy navigation, taking the user through a logical journey.
+
+![Footer](media/docs/mm-footer.png)
 
 ### Features Left to Implement
 
