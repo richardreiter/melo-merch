@@ -263,7 +263,43 @@ The database schema was generated with [django-extensions](https://django-extens
 
 ### Languages Used
 
+- [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Python3](https://developer.mozilla.org/en-US/docs/Glossary/Python)
+
 ### Frameworks, Libraries & Programs Used
+
+- [Balsamiq](https://balsamiq.com/)
+  - Balsamiq was used to make desktop/mobile mockups in order to visualise the project.
+- [Bootstrap](https://getbootstrap.com/)
+  - Bootstrap template.
+- [Amazon S3](https://aws.amazon.com/s3/)
+  - Amazon Simple Storage Service was used to store the project's static files such as media, CSS and JavaScript.
+- [Django](https://www.djangoproject.com/)
+  - Django was used to build the app.
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/overview.html/)
+  - Django allauth for account management.
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+  - Django Crispy Forms for rendering elegant DRY forms.
+- [Font Awesome](https://fontawesome.com/)
+  - Font Awesome was used to add icons to improve the design of the website.
+- [Git](https://git-scm.com/) & [Gitpod](https://gitpod.io/)
+  - Git was used for version control via the Gitpod terminal in order to commit to Git and push to GitHub.
+- [GitHub](https://github.com/)
+  - GitHub was used for version control.
+- [Google Fonts](https://fonts.google.com/)
+  - Google Fonts was used to import the font which is used on the website.
+- [Heroku](https://heroku.com/)
+  - Heroku was used for hosting and deploying the application.
+- [Django-extensions](https://django-extensions.readthedocs.io/en/latest/index.html)
+   - The database schema was generated with [django-extensions](https://django-extensions.readthedocs.io/en/latest/index.html) [Graph models.](https://django-extensions.readthedocs.io/en/latest/graph_models.html)
+- [Django-pandas](https://pypi.org/project/django-pandas/)
+  - Pandas was used to help manipulate data to mail the newsletters to the site's subscribers.
+- [PostgreSQL](https://www.postgresql.org/)
+  - PostgreSQL for database management.
+- [Stripe](https://stripe.com/ie)
+  - Stripe for the payments infrastructure.
 
 ## Testing
 
