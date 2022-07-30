@@ -162,7 +162,102 @@ The database schema was generated with [django-extensions](https://django-extens
 
 ![Footer](media/docs/mm-footer.png)
 
+- __Products Page__
+
+  - The Products Page features a sort by box where the shopper can sort products by Price (low to high), Price (high to low), Rating (low to high), Rating (high to low), Name (A-Z), Name (Z-A), Category (A-Z), Category (Z-A).
+  - Users are able to see the products details', such as photo, name, price, category, rating, description.
+  - If a user clicks on a photo it brings the user to that Product's Detail Page.
+  - A back to top arrow up button can be found at the bottom right of the page.
+
+![Products Page](media/docs/mm-products-page.png)
+
+- __Product Detail Page__
+
+  - The Product Detail Page features its product's image (which fully opens in a new tab upon click), name, price, category, size (if product has one), if it's limited edition or not, rating, description.
+  - Users are able to click on the input box's -/+ buttons to choose the quantity of the product they wish to add to their cart.
+
+![Product Detail Page](media/docs/mm-product-detail-page.png)
+
+- __Cart Page__
+
+  - The Cart Page features all the products which are currently in the cart, their images, names, sizes, sku, price, quantity, subtotal, cart total, delivery charge, grand total.
+  - Users are able to click on the input box's -/+ buttons to change the number of a certain product and also update/remove them from their cart if they wish to.
+  - Shoppers can click on the Secure Checkout button to head to the Checkout Page.
+
+![Cart Page](media/docs/mm-cart-page.png)
+
+- __Checkout Page__
+
+  - The Checkout Page features the order summary to the right.
+  - A form to the left which users need to fill out with their personal details, delivery address and card payment information, in order to complete their order.
+  - If the shopper hasn't got an account they can create one or login to save their personal details.
+  - The user can click on the Adjust cart button if they wish to make any last minute amendments.
+  - If the user clicks on the Complete Order button they are redirected to the Checkout Success Page.
+
+![Checkout Page](media/docs/mm-checkout-page.png)
+
+- __Checkout Success Page__
+
+  - The Checkout Success Page features the successful order info and delivery details.
+  - Shoppers are able to click on a CTA button at the bottom of the page to check the shop's tees.
+
+![Checkout Success Page](media/docs/mm-checkout-success-page.png)
+
+- __Profile Page__
+
+  - If the shopper is registered and logged in, they are able to access the Profile Page, which features the user's Default Delivery Information (where they can update).
+  - Shoppers are also able to see their order history information such as order number (also click on it), date, items and the total.
+
+![My Profile Page](media/docs/mm-profile-page.png)
+
+- __About Page__
+
+  - The About Page features a bit of the shop's history/mission/ethos.
+
+![About Page](media/docs/mm-about-page.png)
+
+- __Subscribe Page__
+
+  - Shoppers are able to subscribe to the website's newsletter in order to receive stay up-to-date with latest merch drops, collections, sales and discounts.
+  - Email validation is in place, and once a user fills out their email and click on the subscribe button, a success toast message comes up, and their email is saved to the database.
+
+![Subscribe Page](media/docs/mm-subscribe-page.png)
+
+- __Mail Newsletter Page__
+
+  - **Only superusers** are able to view this page, where they are able to mail a newsletter straight from the frontend (or backend) to their subscriber's list saved in the database.
+  - Once a message is sent it is also recorded to the database.
+
+![Mail Newsletter Page](media/docs/mm-su-mail-newsletter-pg.png)
+
+- __Product Management Page__
+
+  - **Only superusers** are able to view this page, where they are able to add new products to the site straight from the frontend via a form.
+
+![Product Management Page](media/docs/mm-su-product-management-pg.png)
+
+- __FAQ Page__
+
+  - With the shopper's most frequently asked questions, it features an accordion (collapsible content), if the shopper clicks on a certain question it expands/collapes it.
+
+![FAQ Page](media/docs/mm-faq-page.png)
+
+- __Contact Page__
+
+  - Shoppers are able to contact the shop in case they have any questions/feedback/concerns.
+  - Once the form is submitted it records to the database.
+
+![Contact Page](media/docs/mm-contact-page.png)
+
 ### Features Left to Implement
+
+- __Wish list__
+
+  - Implementing a wish list option would be beneficial for the Melo Merch users, as they would be able to save products that they are keen on buying at a later stage.
+
+- __Testimonial__
+
+  - Implementing a product testimonial option would be valuable for the shop users, as it could help them make learn more about possible purchases, and gain more trust within the website and the Melo Merch brand itself.
 
 ## Technologies Used
 
