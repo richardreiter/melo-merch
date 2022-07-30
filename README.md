@@ -123,6 +123,35 @@ The database schema was generated with [django-extensions](https://django-extens
 
 ### Existing Features
 
+Header:
+
+- __Navigation Bar__
+
+  - Navigation is a fully responsive feature on all pages (with different versions user's role dependant and whether the user is logged in/out), it includes links on the site's Logo (displaying to the left within the bar), Search Bar in the middle, My Account and Shopping car to the right. All Products, Clothing, Skateboards, About, Subscribe, FAQ and Contact Pages are located under the search bar. The Register and Login pages are located in a submenu upon clicking My Account (the 'Product Management' and "Mail Newsletter" pages/nav links only show up for superusers).
+    ![Navigation Bar Superuser Logged In](media/docs/mm-nav-logged-in-admin.png)
+  - The Logout nav link shows up (and both Register/Login nav links disappear) once the user has successfully registered/logged in.
+    ![Navigation Bar Logged In](media/docs/mm-nav-logged-in-user.png)
+    ![Navigation Bar User Logged Out](media/docs/mm-nav-logged-out.png)
+  - The navigation looks the same in each page to allow for easy navigation (without the user having to use the ‘back’ button), taking the user through a logical journey.
+  - This section makes it easy for the user to learn more about the site's different sections and contents.
+  - The search box makes it easy for the shopper/user to search fo a specific item.
+    ![Search Box](media/docs/mm-search-box.png)
+  - My Account icon expands upon click with a sub-menu.
+    ![My Account icon](media/docs/mm-my-account-icon.png)
+  - Cart icon reflects on the current state of how much the shopper will spend, if the shopper clicks on the icon, it will bring them to the Cart Page.
+    ![Cart icon](media/docs/mm-cart-icon.png)
+  - All Products nav link expands upon click with a sub-menu, shoppers are able to see all products sorted by price, rating, category.
+    ![All Products Nav](media/docs/mm-nav-all-products.png)
+  - Clothing nav link expands upon click with a sub-menu, shoppers are able to see all clothing apparel sorted by their categories (tees, hoodies, shorts, hats).
+    ![Clothing Nav](media/docs/mm-nav-clothing.png)
+  - Skateboards nav link expands upon click with a sub-menu, shoppers are able to see all skateboards sorted by their categories (penny boards, regular boards, long boards).
+    ![Clothing Nav](media/docs/mm-nav-skateboards.png)
+
+- __Free Delivery Banner__
+
+  - The Free Delivery Banner is there to entice shoppers to purchase more than €50 in order to get free delivery.
+    ![Free Delivery Banner](media/docs/mm-free-delivery-banner.png)
+
 ### Features Left to Implement
 
 ## Technologies Used
