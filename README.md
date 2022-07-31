@@ -259,48 +259,6 @@ The database schema was generated with [django-extensions](https://django-extens
 
   - Implementing a product testimonial option would be valuable for the shop users, as it could help them make learn more about possible purchases, and gain more trust within the website and the Melo Merch brand itself.
 
-## Technologies Used
-
-### Languages Used
-
-- [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
-- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [Python3](https://developer.mozilla.org/en-US/docs/Glossary/Python)
-
-### Frameworks, Libraries & Programs Used
-
-- [Balsamiq](https://balsamiq.com/)
-  - Balsamiq was used to make desktop/mobile mockups in order to visualise the project.
-- [Bootstrap](https://getbootstrap.com/)
-  - Bootstrap template.
-- [Amazon S3](https://aws.amazon.com/s3/)
-  - Amazon Simple Storage Service was used to store the project's static files such as media, CSS and JavaScript.
-- [Django](https://www.djangoproject.com/)
-  - Django was used to build the app.
-- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/overview.html/)
-  - Django allauth for account management.
-- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
-  - Django Crispy Forms for rendering elegant DRY forms.
-- [Font Awesome](https://fontawesome.com/)
-  - Font Awesome was used to add icons to improve the design of the website.
-- [Git](https://git-scm.com/) & [Gitpod](https://gitpod.io/)
-  - Git was used for version control via the Gitpod terminal in order to commit to Git and push to GitHub.
-- [GitHub](https://github.com/)
-  - GitHub was used for version control.
-- [Google Fonts](https://fonts.google.com/)
-  - Google Fonts was used to import the font which is used on the website.
-- [Heroku](https://heroku.com/)
-  - Heroku was used for hosting and deploying the application.
-- [Django-extensions](https://django-extensions.readthedocs.io/en/latest/index.html)
-   - The database schema was generated with [django-extensions](https://django-extensions.readthedocs.io/en/latest/index.html) [Graph models.](https://django-extensions.readthedocs.io/en/latest/graph_models.html)
-- [Django-pandas](https://pypi.org/project/django-pandas/)
-  - Pandas was used to help manipulate data to mail the newsletters to the site's subscribers.
-- [PostgreSQL](https://www.postgresql.org/)
-  - PostgreSQL for database management.
-- [Stripe](https://stripe.com/ie)
-  - Stripe for the payments infrastructure.
-
 ## Web Marketing
 
 ### SEO
@@ -361,6 +319,48 @@ The database schema was generated with [django-extensions](https://django-extens
   - **Only superusers** are able to mail a newsletter straight from the frontend (or backend) to their subscriber's list saved in the database.
   ![Mail Newsletter Page](media/docs/mm-su-mail-newsletter-pg.png)
 
+## Technologies Used
+
+### Languages Used
+
+- [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Python3](https://developer.mozilla.org/en-US/docs/Glossary/Python)
+
+### Frameworks, Libraries & Programs Used
+
+- [Balsamiq](https://balsamiq.com/)
+  - Balsamiq was used to make desktop/mobile mockups in order to visualise the project.
+- [Bootstrap](https://getbootstrap.com/)
+  - Bootstrap template.
+- [Amazon S3](https://aws.amazon.com/s3/)
+  - Amazon Simple Storage Service was used to store the project's static files such as media, CSS and JavaScript.
+- [Django](https://www.djangoproject.com/)
+  - Django was used to build the app.
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/overview.html/)
+  - Django allauth for account management.
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+  - Django Crispy Forms for rendering elegant DRY forms.
+- [Font Awesome](https://fontawesome.com/)
+  - Font Awesome was used to add icons to improve the design of the website.
+- [Git](https://git-scm.com/) & [Gitpod](https://gitpod.io/)
+  - Git was used for version control via the Gitpod terminal in order to commit to Git and push to GitHub.
+- [GitHub](https://github.com/)
+  - GitHub was used for version control.
+- [Google Fonts](https://fonts.google.com/)
+  - Google Fonts was used to import the font which is used on the website.
+- [Heroku](https://heroku.com/)
+  - Heroku was used for hosting and deploying the application.
+- [Django-extensions](https://django-extensions.readthedocs.io/en/latest/index.html)
+   - The database schema was generated with [django-extensions](https://django-extensions.readthedocs.io/en/latest/index.html) [Graph models.](https://django-extensions.readthedocs.io/en/latest/graph_models.html)
+- [Django-pandas](https://pypi.org/project/django-pandas/)
+  - Pandas was used to help manipulate data to mail the newsletters to the site's subscribers.
+- [PostgreSQL](https://www.postgresql.org/)
+  - PostgreSQL for database management.
+- [Stripe](https://stripe.com/ie)
+  - Stripe for the payments infrastructure.
+
 ## Testing
 
 ### Testing User Stories
@@ -381,13 +381,77 @@ The database schema was generated with [django-extensions](https://django-extens
 
 ## Deployment
 
-### Deploying on Heroku
+### Deployment to Heroku
 
-### Final Deployment on Heroku
+[This project](https://melo-merch.herokuapp.com/) was deployed on [Heroku](https://heroku.com/) using the following steps:
+
+__Procfile & requirements.txt__ 
+  - In GitPod's terminal, type ```pip3 freeze --local > requirements.txt``` to create the requirements file.
+  - Create a new Procfile at the project's root directory and add the code: ```web: gunicorn melo_merch.wsgi``` .
+  - Push to repo.
+
+__Create a Heroku App__
+  - Log into Heroku
+  - Select "New" and "Create new app".
+  - Name the new app, choose the region and click "Create app".
+
+__Environment Variables__
+  - Click the 'Settings' tab towards the top of the page.
+  - Locate the 'Config Vars' and click 'Reveal Config Vars'.
+  - Enter all variables needed:
+    - SECRET_KEY - `<Random key generated>`.
+    - DATABASE_URL - `<Postgres generated>`.
+    - USE_AWS: `True`.
+    - AWS_ACCESS_KEY_ID: `<AWS access key id, generated in the AWS console after user creation>`.
+    - AWS_SECRET_ACCESS_KEY: `<secret AWS access key, generated in the AWS console after user creation>`.
+    - STRIPE_PUBLIC_KEY: `<Stripe public key from the Stripe dashboard>`.
+    - STRIPE_SECRET_KEY: `<Stripe secret key from the Stripe dashboard>`.
+    - STRIPE_WH_SECRET: `<Stripe webhook key>`.
+    - EMAIL_HOST_USER - `<site's email address>`. 
+    - EMAIL_HOST_PASS - `<password from the email above>`.
+
+__Heroku Postgres Database__
+  - Go to the resources tab in Heroku.
+  - In the Add-ons search for Heroku Postgres, select it.
+  - Choose the Hobby Dev-Free option in plans.
+  - Click submit order form.
+  - Go to your local environment and install:
+    - `pip3 install dj_databse_url`
+    - `pip3 install psycopg2-binary`
+    - Add these to the requirements.txt file using `pip3 freeze > requirements.txt`
+
+__Connect to GitHub__
+  - From the dash, click on the 'Deploy' tab.
+  - At the 'Deployment Method' select 'GitHub'.
+  - Type your repo's name.
+  - When you have located the correct repository, click 'Connect'.
+
+__Deploy__
+  - Click "Deploy" at the top to go to the Deployment settings tab.
+  - Choose "GitHub" as the deployment method.
+  - Choose "Automatic deploys" if you would like to enable a chosen branch to be automatically deployed with every GitHub push to the branch.
+  - Use "Manual deploy" to deploy the current state of a branch to this app (simply enter the name of the branch and "Deploy Branch").
+  - Once the deployment has completed click on "View app".
 
 ### Forking the Repository
 
+By forking the GitHub Repository you make a copy of the original repository on you GitHub account to view and/or make changes without affecting the original repository.
+
+To achieve that simply:
+
+- Log into GitHub.
+- Locate the GitHub Repository in question.
+- At the top of the repository, on the right side of the page, select "Fork".
+- You should now have a copy of the original repository in your GitHub account.
+
 ### Creating a Clone
+
+How to run this project locally:
+
+- Install the GitPod Browser Extension for Google Chrome.
+- Log into GitHub.
+- Locate the GitHub Repository you'd like to clone.
+- Click the green "GitPod" button in the top right corner of the repository. This will create a new GitPod workspace.
 
 ## Credits 
 
