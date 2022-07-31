@@ -457,6 +457,18 @@ How to run this project locally:
 
 ### Content
 
+- The instructions on [how to reset/remove the latest Git commit from a repo](https://gist.github.com/CrookedNumber/8964442) were taken from [this GitHub Gist.](https://gist.github.com/CrookedNumber/8964442)
+- Many thanks to Kenneth Broni for the ["Build a Newsletter Section for Your Django Web Application"](https://www.youtube.com/watch?v=hWtlskOaFNI) which was a good reference and example. 
+- A huge thank you to Chris Zielinski and Code Institute for the ["Boutique Ado" Walkthrough project](https://github.com/Code-Institute-Solutions/boutique_ado_v1) which was a great reference, inspiration and example.
+
 ### Media
 
+- All the website's images were taken from [Unsplash.](https://unsplash.com/)
+- Some of the FAQ page's content was inspired from [asos](https://www.asos.com/customer-care/).
+- Some of the About page's content was inspired from [HBX](https://hbx.com/about).
+
 ### Other
+
+- Many thanks to my mentor, for his advice, guidance and feedback.
+- Thanks to Code Institute's Tutor Support, for their help.
+- Thanks to Code Institute's Slack community, for their support.
