@@ -301,6 +301,66 @@ The database schema was generated with [django-extensions](https://django-extens
 - [Stripe](https://stripe.com/ie)
   - Stripe for the payments infrastructure.
 
+## Web Marketing
+
+### SEO
+
+- [Google](https://www.google.com/)
+  - Google's Autocomplete was used to get some ideas of keywords for SEO
+    ![Google Autocomplete](media/docs/mm-google-autocomplete.png)
+  - Google's "People Also Ask" was used to get even more ideas of keywords for SEO
+    ![Google People Also Ask](media/docs/mm-google-ppl-ask.png)
+
+- [Wordtracker](https://www.wordtracker.com/)
+  - Wordtracker was used as a keyword research tool for both short and long-tail keywords
+    ![Wordtracker Keywords](media/docs/mm-wordtracker-keywords.png)
+
+- __Meta Tags__
+
+  - Description: "Irish underground streetwear for lowkey skateboarders"
+
+  - Keywords: underground streetwear, 90s skater fashion, lowkey streetwear tee, lowkey brand, undeground clothing brand, skateboards ireland, streetwear brand hoodies, pennyboards ireland, skateboarder hats, irish skate shorts
+
+### Marketing Research
+
+- Who are our users?
+  - People who are into streetwear fashion and skateboarding.
+
+- Which online platforms would we find lots of our users?
+  - Since the majority of our users are teenagers/young adults, we mostly find them in social media.
+
+- Would our users use social media? If yes, which platforms do we think we would find them on?
+  - Absolutely, we can find them on TikTok, Instagram and Facebook.
+
+- What do our users need? Could we meet that need with useful content? If yes, how could we best deliver that content to them?
+  - Quality streetwear fashion apparel and skateboards. We can deliver useful content for instance with fashion tips newsletters, or posts to our social media following.
+
+- Would our business run sales or offer discounts? How do we think our users would most like to hear about these offers?
+  - Most definitely, our users would like to hear about discounts through social media and newsletters.
+
+- Would our business have a budget to spend on advertising? Or would it need to work with free or low cost options to market itself?
+  - Since our business is still growing and not quite estabilished yet, for the time being we'd try to grow organically with free social media posts, posting fashion tips/trends on a daily basis.
+
+### Social Media
+
+- __Facebook Page__
+
+  - Users can visit [Melo Merch's Facebook Business Page clicking here.](https://www.facebook.com/Melo-Merch-100754669406133/)
+      ![Facebook Page Admin View](media/docs/mm-fb-pg-adm.png)
+      ![Facebook Page Users View](media/docs/mm-fb-pg-usr.png)
+
+### Email Marketing
+
+- __Newsletter Subscription Page__
+
+  - Shoppers are able to subscribe to the website's newsletter in order to receive emails with latest merch drops, collections, sales and discounts.
+  ![Subscribe Page](media/docs/mm-subscribe-page.png)
+
+- __Mail Newsletter Page__
+
+  - **Only superusers** are able to mail a newsletter straight from the frontend (or backend) to their subscriber's list saved in the database.
+  ![Mail Newsletter Page](media/docs/mm-su-mail-newsletter-pg.png)
+
 ## Testing
 
 ### Testing User Stories
