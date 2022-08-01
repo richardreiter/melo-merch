@@ -590,6 +590,14 @@ __All user stories were manually tested__
 
 ### Browser Testing
 
+- The Melo Merch website was tested on several browsers (without any issues - across different devices/viewports), including:
+  - Google Chrome (103.0.5060.134) (arm64)
+  - Mozilla Firefox (103.0 (64-bit))
+  - Safari (15.5 (17613.2.7.1.8))
+  - Microsoft Edge (103.0.1264.77)
+  - Brave (1.41.100  Chromium: 103.0.5060.134)
+  - Vivaldi (5.2.2623.48)
+
 ### Known Bugs
 
 ## Deployment
