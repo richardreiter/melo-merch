@@ -472,6 +472,92 @@ __All user stories were manually tested__
 
 ### Validator Testing
 
+- HTML
+  - No errors/warnings were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmelo-merch.herokuapp.com%2F)
+    - Landing/Home Page result:
+    ![Home Page W3C validation result](media/docs/mm-w3c-index.png)
+    - Products Page result:
+    ![Products Page W3C validation result](media/docs/mm-w3c-products.png)
+    - Product Detail Page result:
+    ![Product Detail Page W3C validation result](media/docs/mm-w3c-product-detail.png)
+    - About Page result:
+    ![About Page W3C validation result](media/docs/mm-w3c-about.png)
+    - Subscribe Page result:
+    ![Subscribe Page W3C validation result](media/docs/mm-w3c-newsletter.png)
+    - FAQ Page result:
+    ![FAQ Page W3C validation result](media/docs/mm-w3c-faq.png)
+    - Contact Page result:
+    ![Contact Page W3C validation result](media/docs/mm-w3c-contact.png)
+    - Cart Page result:
+    ![Cart Page W3C validation result](media/docs/mm-w3c-cart.png)
+    - Login Page result:
+    ![Login Page W3C validation result](media/docs/mm-w3c-login.png)
+    - Register Page result:
+    ![Register Page W3C validation result](media/docs/mm-w3c-register.png)
+    - Checkout Page result:
+    ![Checkout Page W3C validation result](media/docs/mm-w3c-checkout.png)
+
+- CSS
+  - No errors were found when passing through the [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmelo-merch.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    - base result:
+    ![Jigsaw base validation result](media/docs/mm-base-css-validation.png)
+    - checkout result:
+    ![Jigsaw  validation result](media/docs/mm-checkout-css-validation.png)
+    - profile result:
+    ![Jigsaw  validation result](media/docs/mm-profile-css-validation.png)
+
+- JavaScript
+  - [JShint Code quality tool](https://jshint.com/) was used to validate the JavaScript, all the JavaScript code is validating without any warnings, except for the quantity_input_script [which is a bug fix for Code Institute's Boutique Ado Walkthrough Project](https://github.com/Code-Institute-Solutions/boutique_ado_v1/commit/de7ad2067ac1b5de37a4cd8b9f4ddf572a4bf6c7), it returns seven warnings:
+  ![JShint Quantity Input](media/docs/mm-jshint-qty-input.png)
+  ![JShint Stripe](media/docs/mm-jshint-stripe-elements.png)
+  ![JShint Country Field](media/docs/mm-jshint-countryfield.png)
+  ![JShint Back to Top Button](media/docs/mm-jshint-backtotopbtn.png)
+
+- Python
+    - No errors were returned when passing through the [online PEP8 checker.](http://pep8online.com/), except for the webhook_handler.py (please see screenshot in the checkout app), which returned one E501 warning, line too long (81 > 79 characters), I wasn't able to do a line break without breaking the code.
+      - melo_merch:
+      ![melo_merch urls](media/docs/mm-melo-merch-urls.png)
+      ![melo_merch views](media/docs/mm-melo-merch-views.png)
+      - cart app:
+      ![cart contexts](media/docs/mm-cart-contexts.png)
+      ![cart urls](media/docs/mm-cart-urls.png)
+      ![cart views](media/docs/mm-cart-views.png)
+      - checkout app:
+      ![checkout init](media/docs/mm-checkout-init.png)
+      ![checkout admin](media/docs/mm-checkout-admin.png)
+      ![checkout apps](media/docs/mm-checkout-apps.png)
+      ![checkout forms](media/docs/mm-checkout-forms.png)
+      ![checkout models](media/docs/mm-checkout-models.png)
+      ![checkout signals](media/docs/mm-checkout-signals.png)
+      ![checkout urls](media/docs/mm-checkout-urls.png)
+      ![checkout views](media/docs/mm-checkout-views.png)
+      ![checkout webhook handler](media/docs/mm-checkout-webhook-handler.png)
+      ![checkout webhooks](media/docs/mm-checkout-webhooks.png)
+      - home app:
+      ![home apps](media/docs/mm-home-apps.png)
+      ![home urls](media/docs/mm-home-urls.png)
+      ![home views](media/docs/mm-home-views.png)
+      - newsletter app:
+      ![newsletter admin](media/docs/mm-newsletter-admin.png)
+      ![newsletter apps](media/docs/mm-newsletter-apps.png)
+      ![newsletter forms](media/docs/mm-newsletter-forms.png)
+      ![newsletter models](media/docs/mm-newsletter-models.png)
+      ![newsletter urls](media/docs/mm-newsletter-urls.png)
+      ![newsletter views](media/docs/mm-newsletter-views.png)
+      - products app:
+      ![products admin](media/docs/mm-products-admin.png)
+      ![products apps](media/docs/mm-products-apps.png)
+      ![products forms](media/docs/mm-products-forms.png)
+      ![products models](media/docs/mm-products-models.png)
+      ![products urls](media/docs/mm-products-urls.png)
+      ![products views](media/docs/mm-products-views.png)
+      - users app:
+      ![users apps](media/docs/mm-users-apps.png)
+      ![users forms](media/docs/mm-users-forms.png)
+      ![users models](media/docs/mm-users-models.png)
+      ![users urls](media/docs/mm-users-urls.png)
+      ![users views](media/docs/mm-users-views.png)
+
 ### Google Lighthouse
 
 ### Color Contrast Accessibility Checker
