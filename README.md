@@ -575,6 +575,10 @@ __All user stories were manually tested__
 
 ### Responsive Testing
 
+- __[Am I Responsive?](http://ami.responsivedesign.is/)__
+  - This design tool was used to show how responsive the website is and looks across 4 different viewports (Desktop, Laptop, Tablet and Mobile):
+![Responsive Melo Merch](media/docs/mm-responsiveness.png)
+
 ### Device Testing
 
 ### Browser Testing
