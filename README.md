@@ -581,6 +581,13 @@ __All user stories were manually tested__
 
 ### Device Testing
 
+- The Melo Merch website was tested on several devices/environments (without any issues), including:
+  - MacBook Air 13.3" M1 2020 (macOS Monterey 12.4)
+  - Lenovo 5i i5 15" (Windows 10 64x)
+  - iPhone 11 Pro Max
+  - Google Pixel 4a (Android 12)
+  - Google Pixel 6 (Android 12)
+
 ### Browser Testing
 
 ### Known Bugs
