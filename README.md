@@ -569,6 +569,10 @@ __All user stories were manually tested__
 
 ### Color Contrast Accessibility Checker
 
+- [a11y Color Contrast Accessibility Validator](https://color.a11y.com/) was used to analyse the contrast of the site and make sure it complies with website accessibilities regulations.
+  - Home Page result:
+  ![Color scheme contrast validation](media/docs/a11y-color-contrast.png)
+
 ### Responsive Testing
 
 ### Device Testing
