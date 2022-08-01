@@ -560,6 +560,13 @@ __All user stories were manually tested__
 
 ### Google Lighthouse
 
+- Google's Lighthouse was used for measuring the quality of the pages.
+  - Home Page (desktop) result:
+  ![Index Lighthouse Desktop result](media/docs/mm-desktop-lighthouse.png)
+
+  - Home Page (mobile) result:
+  ![Index Lighthouse Mobile result](media/docs/mm-mobile-lighthouse.png)
+
 ### Color Contrast Accessibility Checker
 
 ### Responsive Testing
