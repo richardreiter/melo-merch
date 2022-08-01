@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse
 from .forms import SubscribersForm, MailMessageForm
 from .models import Subscribers
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.core.mail import send_mail
 from django_pandas.io import read_frame
 
@@ -15,6 +16,10 @@ https://www.youtube.com/watch?v=hWtlskOaFNI
 
 
 def newsletter(request):
+    """
+    View for users to subscribe
+    to newsletter
+    """
     if request.method == 'POST':
         form = SubscribersForm(request.POST)
         if form.is_valid():
@@ -29,7 +34,14 @@ def newsletter(request):
     return render(request, 'newsletter/newsletter.html', context)
 
 
+@login_required
 def mail_letter(request):
+    """
+    View for admins to email a newsletter
+    """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only shop owners can do that.')
+        return redirect(reverse('home'))
     # get all subs emails
     emails = Subscribers.objects.all()
     # put in a data frame
