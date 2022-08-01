@@ -600,6 +600,8 @@ __All user stories were manually tested__
 
 ### Known Bugs
 
+- When a registered user/shopper who's already previously made a purchase and have saved their profile section's details within “Default Delivery Information” in “My Profile” page make a new purchase, for some reason in the checkout page's form their details aren't pre-populating with some of their delivery information.
+
 ## Deployment
 
 ### Deployment to Heroku
