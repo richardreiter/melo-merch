@@ -25,19 +25,17 @@ Agile methodology tool:
 ![Kanban Board Melo Merch](media/docs/mm-kanban-board.png)
 
 - As a Site User I can register for an account so that I have my personal account information.
-- As a site user I can login/logout of my account so that I have access to my account details.
+- As a Site user I can login/logout of my account so that I have access to my account details.
 - As a Site User I can recover my password in case I forget it so that I can regain access to my account.
 - As a Site User I can receive an email confirmation after registration so that I can confirm my account creation.
 - As a Site User I can personalise the user profile so that I can view my order history/confirmations/save my payment information.
 - As a Shopper I can browse a list of products so that I can pick some I'd like to buy.
 - As a Shopper I can view a certain product's details so that I see a full description, ratings, picture, sizes.
-- As a Shopper I can easily identify any sales so that I can save some money.
-- As a Shopper I can see my bag total anytime so that I can be within budget.
+- As a Shopper I can see my cart total anytime so that I can be within budget.
 - As a Shopper I can view a category of a product so that I can easily find a product I'm interested in without having to browse too much.
 - As a Shopper I can sort the products' list so that I can sort products by specific filters.
 - As a Shopper I can sort more than one category so that I can better tailor the filters to my needs.
 - As a Shopper I can search/query a product so that I can find a specific product easily.
-- As a Shopper I can see the result of my query so that I can find out if the shop stocks the product I'm looking for.
 - As a Shopper I can pick size/quantity of product when buying it so that I don't accidentally select the wrong size/quantity.
 - As a Shopper I can see the items in my cart so that I can have control over my spending.
 - As a Shopper I can update the amount of items in my cart so that I can make adjustments before checking out.
@@ -56,8 +54,6 @@ Agile methodology tool:
 - As a Shop Owner I can create a FB business page so that I can gain more traction from socials.
 - As a Shopper I can see a FAQ page so that I can find the most frequently asked questions, without having to contact the shop.
 - As a Shopper I can see an about page from the shop so that I can learn more about its story, and gain trust from the brand.
-- As a Shopper I can add a product to a wish list so that I can purchase it at a later stage.
-- As a Shopper I can leave a review of a product so that other users can see my opinion.
 
 ### Wireframes
 
@@ -363,7 +359,116 @@ The database schema was generated with [django-extensions](https://django-extens
 
 ## Testing
 
+- Manual testing:
+  
+  - All links, form submissions, admin privileges, user privileges, app functions were throughouly tested and work as intended.
+
 ### Testing User Stories
+
+__All user stories were manually tested__
+
+- As a Site User I can register for an account so that I have my personal account information.
+  - User clicks on the navigation bar's icon "My Account", "Register".
+  - User fills out sign up form (validation in place), press sign up.
+  - The page and a toast message tell the user a confirmation email was sent.
+  - User checks their email inbox and click on the link to confirm the email.
+  - User is finally fully registered and able to login.
+
+- As Site User I can login/logout of my account so that I have access to my account profile details and previous orders.
+  - Users are able to log in clicking on the navigation bar's icon "My Account", "Login/Logout" and view previous orders in the profile tab in the "My Account", "My Profile".
+
+- As a Site User I can recover my password in case I forget it so that I can regain access to my account.
+  - User goes to the login page.
+  - User clicks on "Forgot Password?"
+  - User fills out their email address and click on "Reset My Password".
+  - User checks their email inbox and click on the link to reset and choose a new password.
+
+- As a Site User I can personalise the user profile so that I can view my order history/confirmations/save my billing information.
+  - Users clicks on the navigation bar's icon "My Account", "My Profile" and view order history/confirmation/save billing address.
+
+- As a Shopper I can browse a list of products so that I can pick some I'd like to buy.
+  - User is greeted by a CTA button at the home/landing page "Shop Now", which will bring them to all the products.
+  - User can click on the nav link "ALL PRODUCTS" and pick if they'd like to sort by price, rating, category,
+
+- As a Shopper I can view a certain product's details so that I see a full description, ratings, picture, sizes.
+  - From the products page, user clicks on any product and will be brought out to the product's detail page, including the product description, rating, picture and sizes available.
+
+- As a Shopper I can see my cart total anytime so that I can be within budget.
+  - The navbar features a cart icon which reflects in real-time the current state of their cart once a user adds/removes/updates any cart items, the price changes.
+
+- As a Shopper I can view a category of a product so that I can easily find a product I'm interested in without having to browse too much.
+  - User clicks on "Clothing" or "Skateboards" and can click on a specific category.
+
+- As a Shopper I can sort the products' list so that I can sort products by specific filters.
+  - User clicks on "All Products" and from there can select by price, rating, category or all products.
+  - User can click on a dropdown box and sort products by Price (low to high/high to low), Rating (low to high/high to low)
+
+- As a Shopper I can sort more than one category so that I can better tailor the filters to my needs.
+  - User clicks on "All Clothing" or "All Skateboards"
+  - User is able to filter/sort by price/name/rating or sub-category.
+
+- As a Shopper I can search/query a product so that I can find a specific product easily.
+  - User clicks on the permanent nav bar search box.
+  - User inputs a keyword and press enter or clicks on the magnifying glass icon/button
+  - Search query results is returned, user is also able to sort the results by price, rating, name or category.
+
+- As a Shopper I can pick size/quantity of product when buying it so that I don't accidentally select the wrong size/quantity.
+  - If a certain product has different sizes, at its product detail page, a dropdown box will appear and the user is able to pick different sizes (S/M/L) and quantities of a particular size.
+
+- As a Shopper I can see the items in my cart so that I can have control over my spending.
+  - The cart icon at the navigation bar reflects the current spending, if the users clicks on it, it brings them to the cart page, where they can see a breakdown of all the products in the cart, pricing and delivery fee (if any).
+
+- As a Shopper I can update the amount of items in my cart so that I can make adjustments before checking out.
+  - On the cart page, users are able to update quantity or delete any products which are currently in their cart.
+
+- As a Shopper I can put my card details with ease so that I can quickly checkout.
+  - On the checkout page, users are prompted wich a form where they fill out their personal and delivery details, and the card number (all through HTTPS) and Stripe handles the payment securely.
+
+- As a Shopper I can safely input my details so that my details are secure.
+  - The website uses Hypertext Transfer Protocol Secure and also Stripe payments infrastructure to handle the payment.
+
+- As a Shopper I can view my order and confirmation of the order after checking out so that I can double-check the order is correct.
+  - As soon as a user completes the order, they are redirected to the Checkout Success page, with their order information, the order is also saved to their Profile page.
+
+- As a Shopper I can get an email confirmation of my order so that I can keep for my records.
+  - As soon as a user completes the order, they will receive a confirmation email from the shop, containing their order information.
+
+- As a Site Admin I can add a product so that I can keep the inventory updated with new merch.
+  - Superusers are able to view a page called "Product Management", where they are able to add new products to the site straight from the frontend via a form.
+
+- As a Site Admin I can update a product so that I can change the price/image/description/name.
+  - Once a superuser is logged in, they are able to see an "Edit" link right under each product from the Products Page, where they are able to update any product.
+
+- As a Site Admin I can delete a product so that I can delete items which I no longer wish to sell.
+  - Once a superuser is logged in, they are able to see an "Delete" link right under each product from the Products Page, where they are able to delete any product.
+
+- As a Site User I can see a custom 404 page so that I'm not confused on why I didn't land on the page I had intended to.
+  - The website features a clear custom 404 page which displays a big heading stating "THE PAGE YOU ARE LOOKING FOR ISN'T AVAILABLE", and a CTA button right under it "RETURN TO SHOP".
+
+- As a Shopper/Potential Shopper I can find a contact page so that I can easily contact the shop with any questions/concerns.
+  - Users are able to contact the shop clicking on the permanent navigation bar Contact Page link.
+  - Once there, users are greeted with a straight forward form where they are able to contact the shop.
+
+- As a Shopper I can subscribe to a newsletter so that I can keep up to date with new collections, sales, discounts.
+  - Users are able to subscribe to the shop's newsletter by clicking on the permanent navigation bar "Subscribe" link.
+  - Once there, users are able to input their email and subscribe to the shop's newsletter.
+
+- As a Shop Owner I can link a privacy policy so that shoppers know how their data is collected and processed.
+  - The footer area consists of a permanent "Privacy Policy" link to the site's Privacy Policy, where users can click on it (opens in a new tab) and learn more about it.
+
+- As a Site Owner I can improve my SEO so that I improve my search engine ranking.
+  - The website contains a sitemap.xml file, a robots.txt file, meta description tag and a meta keyword tag, with a mix of short and longtail keywords.
+
+- As a Shop Owner I can create a FB business page so that I can gain more traction from socials.
+  - The website features social icons in the footer area, if a user clicks on the Facebook icon, it brings them to the shop's FB Business Page.
+
+- As a Shopper I can see a FAQ page so that I can find the most frequently asked questions, without having to contact the shop.
+  - Users are able to read the shop's most Frequently Asked Questions by clicking on the permanent navigation bar "FAQ" link.
+  - At the page there's an accordion with the questions and answers.
+
+- As a Shopper I can see an about page from the shop so that I can learn more about its story, and gain trust from the brand.
+  - Users are able to learn more about the the shop clicking on the permanent navigation bar "About" page link.
+  - Once there, users can read more about the website's brand story/mission/ethos.
 
 ### Validator Testing
 
