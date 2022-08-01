@@ -1,6 +1,6 @@
 # Melo Merch
 
-[Melo Merch](https://github.com/richardreiter/melo-merch) is an online Business-to-Consumer (B2C) e-commerce website dedicated to selling streetwear fashion apparel and skater products such as tees, hoodies, shorts, hats and skateboards.
+[Melo Merch](https://github.com/richardreiter/melo-merch) is an online Business-to-Consumer (B2C) e-commerce website dedicated to selling streetwear fashion apparel and skater products such as tees, hoodies, shorts, hats, and skateboards.
 
 ![Responsive Melo Merch](media/docs/mm-responsiveness.png)
 
@@ -10,12 +10,12 @@ Visit the live site [here.](https://melo-merch.herokuapp.com/)
 
 ### Project Goals
 
-- Create a fully functional e-commerce website to allow users to purchase streetwear fashion products - including features (but not limited to) such as easy payment gateway, authentication system, search and filter functionality, high quality product images, clear product descriptions, ratings, shopping cart and a single payment system.
+- Create a fully functional e-commerce website to allow users to purchase streetwear fashion products - including, but not limited to, features such as easy uch as easy payment gateway, authentication system, search and filter functionality, high quality product images, clear product descriptions, ratings, shopping cart and a single payment system.
 
 ### Target Audience
 
 - Anyone who is into streetwear fashion and skateboarding.
-- People looking to purchase a present for someone who's into streetwear/skateboarding.
+- People looking to purchase a present for someone who's into streetwear fashion and skateboarding.
 
 ### User Stories
 
@@ -25,7 +25,7 @@ Agile methodology tool:
 ![Kanban Board Melo Merch](media/docs/mm-kanban-board.png)
 
 - As a Site User I can register for an account so that I have my personal account information.
-- As a Site user I can login/logout of my account so that I have access to my account details.
+- As a Site user I can login/logout of my account so that I have access to my account profile details and previous orders.
 - As a Site User I can recover my password in case I forget it so that I can regain access to my account.
 - As a Site User I can receive an email confirmation after registration so that I can confirm my account creation.
 - As a Site User I can personalise the user profile so that I can view my order history/confirmations/save my payment information.
@@ -36,17 +36,18 @@ Agile methodology tool:
 - As a Shopper I can sort the products' list so that I can sort products by specific filters.
 - As a Shopper I can sort more than one category so that I can better tailor the filters to my needs.
 - As a Shopper I can search/query a product so that I can find a specific product easily.
+- As a Shopper I can see the result of my query so that I can find out if the shop stocks the product I'm looking for.
 - As a Shopper I can pick size/quantity of product when buying it so that I don't accidentally select the wrong size/quantity.
 - As a Shopper I can see the items in my cart so that I can have control over my spending.
 - As a Shopper I can update the amount of items in my cart so that I can make adjustments before checking out.
-- As a Shopper I can put my card details with ease so that I can quickly checkout.
+- As a Shopper I can input my card details with ease so that I can quickly checkout.
 - As a Shopper I can safely input my details so that my details are secure.
 - As a Shopper I can view my order and confirmation of the order after checking out so that I can double-check the order is correct.
-- As a Shopper I can get an email confirmation of my order so that I can keep for my records.
+- As a Shopper I can get an email confirmation of my order which I can keep for my records.
 - As a Site Admin I can add a product so that I can keep the inventory updated with new merch.
 - As a Site Admin I can update a product so that I can change the price/image/description/name.
 - As a Site Admin I can delete a product so that I can delete items which I no longer wish to sell.
-- As a Site User I can see a custom 404 page so that I'm not confused on why I didn't land on the page I had intended to.
+- As a Site User I can see a custom 404 page so that I'm not confused as to why I didn't land on the page I had intended to.
 - As a Shopper/Potential Shopper I can find a contact page so that I can easily contact the shop with any questions/concerns.
 - As a Shopper I can subscribe to a newsletter so that I can keep up to date with new collections, sales, discounts.
 - As a Shop Owner I can link a privacy policy so that shoppers know how their data is collected and processed.
@@ -54,10 +55,13 @@ Agile methodology tool:
 - As a Shop Owner I can create a FB business page so that I can gain more traction from socials.
 - As a Shopper I can see a FAQ page so that I can find the most frequently asked questions, without having to contact the shop.
 - As a Shopper I can see an about page from the shop so that I can learn more about its story, and gain trust from the brand.
+- As a Shopper I can add a product to a wish list so that I can purchase it at a later stage.
+- As a Shopper I can leave a review of a product so that other users can see my opinion.
+
 
 ### Wireframes
 
-The mockups below were done with the help of Balsamiq (for both desktop and mobile screens), these were useful to help visualise the project.
+The mock-ups below were done with the help of Balsamiq (for both desktop and mobile screens), these were useful to help visualise the project.
 
 - Desktop:
   - Home page
@@ -110,10 +114,10 @@ The database schema was generated with [django-extensions](https://django-extens
 
 ### Design
 
-- The colour scheme is gold old fashion/classic black & white - [contrast passes a11y validation.](https://color.a11y.com/)
+- The colour scheme is a classic black & white - [contrast passes a11y validation.](https://color.a11y.com/)
 ![Color scheme contrast validation](media/docs/a11y-color-contrast.png)
 
-- [Google Fonts](https://fonts.google.com/) was used for the website's font. The Playfair Display font was used as it gives an air of elegance and it's a stylish font.
+- [Google Fonts](https://fonts.google.com/) was used for the website's font. The Playfair Display font was chosen as it gives an air of elegance, and it is a stylish font.
 
 ## Features
 
@@ -126,19 +130,19 @@ The database schema was generated with [django-extensions](https://django-extens
   - The Logout nav link shows up (and both Register/Login nav links disappear) once the user has successfully registered/logged in.
     ![Navigation Bar Logged In](media/docs/mm-nav-logged-in-user.png)
     ![Navigation Bar User Logged Out](media/docs/mm-nav-logged-out.png)
-  - The navigation looks the same in each page to allow for easy navigation (without the user having to use the ‘back’ button), taking the user through a logical journey.
+  - The navigation looks the same on each page to allow for easy navigation (without the user having to use the ‘back’ button), taking the user through a logical journey.
   - This section makes it easy for the user to learn more about the site's different sections and contents.
-  - The search box makes it easy for the shopper/user to search fo a specific item.
+  - The search box makes it easy for the shopper/user to search for a specific item.
     ![Search Box](media/docs/mm-search-box.png)
   - My Account icon expands upon click with a sub-menu.
     ![My Account icon](media/docs/mm-my-account-icon.png)
   - Cart icon reflects on the current state of how much the shopper will spend, if the shopper clicks on the icon, it will bring them to the Cart Page.
     ![Cart icon](media/docs/mm-cart-icon.png)
-  - All Products nav link expands upon click with a sub-menu, shoppers are able to see all products sorted by price, rating, category.
+  - "All Products" nav link expands upon click with a sub-menu, shoppers are able to see all products sorted by price, rating, category.
     ![All Products Nav](media/docs/mm-nav-all-products.png)
-  - Clothing nav link expands upon click with a sub-menu, shoppers are able to see all clothing apparel sorted by their categories (tees, hoodies, shorts, hats).
+  - "Clothing" nav link expands upon click with a sub-menu, shoppers are able to see all clothing apparel sorted by their categories (tees, hoodies, shorts, hats).
     ![Clothing Nav](media/docs/mm-nav-clothing.png)
-  - Skateboards nav link expands upon click with a sub-menu, shoppers are able to see all skateboards sorted by their categories (penny boards, regular boards, long boards).
+  - "Skateboards" nav link expands upon click with a sub-menu, shoppers are able to see all skateboards sorted by their categories (penny boards, regular boards, long boards).
     ![Clothing Nav](media/docs/mm-nav-skateboards.png)
 
 - __Free Delivery Banner__
@@ -161,15 +165,15 @@ The database schema was generated with [django-extensions](https://django-extens
 - __Products Page__
 
   - The Products Page features a sort by box where the shopper can sort products by Price (low to high), Price (high to low), Rating (low to high), Rating (high to low), Name (A-Z), Name (Z-A), Category (A-Z), Category (Z-A).
-  - Users are able to see the products details', such as photo, name, price, category, rating, description.
-  - If a user clicks on a photo it brings the user to that Product's Detail Page.
+  - Users are able to see the product's details', such as photo, name, price, category, rating, description.
+  - If a user clicks on a photo, it brings the user to that Product's Detail Page.
   - A back to top arrow up button can be found at the bottom right of the page.
 
 ![Products Page](media/docs/mm-products-page.png)
 
 - __Product Detail Page__
 
-  - The Product Detail Page features its product's image (which fully opens in a new tab upon click), name, price, category, size (if product has one), if it's limited edition or not, rating, description.
+  - The Product Detail Page features its product's image (which fully opens in a new tab upon click), name, price, category, size (if the product has one), if it's a limited edition or not, rating, description.
   - Users are able to click on the input box's -/+ buttons to choose the quantity of the product they wish to add to their cart.
 
 ![Product Detail Page](media/docs/mm-product-detail-page.png)
@@ -177,8 +181,8 @@ The database schema was generated with [django-extensions](https://django-extens
 - __Cart Page__
 
   - The Cart Page features all the products which are currently in the cart, their images, names, sizes, sku, price, quantity, subtotal, cart total, delivery charge, grand total.
-  - Users are able to click on the input box's -/+ buttons to change the number of a certain product and also update/remove them from their cart if they wish to.
-  - Shoppers can click on the Secure Checkout button to head to the Checkout Page.
+  - Users are able to click on the input box's -/+ buttons to change the quantity of a certain product in their cart, and they can also update/remove them from their cart if they wish to.
+  - Shoppers can click on the "Secure Checkout" button to head to the Checkout Page.
 
 ![Cart Page](media/docs/mm-cart-page.png)
 
@@ -186,9 +190,9 @@ The database schema was generated with [django-extensions](https://django-extens
 
   - The Checkout Page features the order summary to the right.
   - A form to the left which users need to fill out with their personal details, delivery address and card payment information, in order to complete their order.
-  - If the shopper hasn't got an account they can create one or login to save their personal details.
+  - If the shopper hasn't got an account, they can create one or login to save their personal details.
   - The user can click on the Adjust cart button if they wish to make any last minute amendments.
-  - If the user clicks on the Complete Order button they are redirected to the Checkout Success Page.
+  - If the user clicks on the Complete Order button, they are redirected to the Checkout Success Page.
 
 ![Checkout Page](media/docs/mm-checkout-page.png)
 
@@ -202,19 +206,19 @@ The database schema was generated with [django-extensions](https://django-extens
 - __Profile Page__
 
   - If the shopper is registered and logged in, they are able to access the Profile Page, which features the user's Default Delivery Information (where they can update).
-  - Shoppers are also able to see their order history information such as order number (also click on it), date, items and the total.
+  - Shoppers are also able to see their order history information such as order number (and click on it to see more information), date, items, and the total.
 
 ![My Profile Page](media/docs/mm-profile-page.png)
 
 - __About Page__
 
-  - The About Page features a bit of the shop's history/mission/ethos.
+  - The About Page features a description of the shop's history/mission/ethos.
 
 ![About Page](media/docs/mm-about-page.png)
 
 - __Subscribe Page__
 
-  - Shoppers are able to subscribe to the website's newsletter in order to receive stay up-to-date with latest merch drops, collections, sales and discounts.
+  - Shoppers are able to subscribe to the website's newsletter in order to receive emails with the latest merch drops, collections, sales, and discounts.
   - Email validation is in place, and once a user fills out their email and click on the subscribe button, a success toast message comes up, and their email is saved to the database.
 
 ![Subscribe Page](media/docs/mm-subscribe-page.png)
@@ -222,7 +226,7 @@ The database schema was generated with [django-extensions](https://django-extens
 - __Mail Newsletter Page__
 
   - **Only superusers** are able to view this page, where they are able to mail a newsletter straight from the frontend (or backend) to their subscriber's list saved in the database.
-  - Once a message is sent it is also recorded to the database.
+  - Once a message is sent, it is also recorded to the database.
 
 ![Mail Newsletter Page](media/docs/mm-su-mail-newsletter-pg.png)
 
@@ -234,14 +238,14 @@ The database schema was generated with [django-extensions](https://django-extens
 
 - __FAQ Page__
 
-  - With the shopper's most frequently asked questions, it features an accordion (collapsible content), if the shopper clicks on a certain question it expands/collapes it.
+  - With the shopper's most frequently asked questions, it features an accordion (collapsible content), if the shopper clicks on a certain question it expands/collapses it.
 
 ![FAQ Page](media/docs/mm-faq-page.png)
 
 - __Contact Page__
 
   - Shoppers are able to contact the shop in case they have any questions/feedback/concerns.
-  - Once the form is submitted it records to the database.
+  - Once the form is submitted, it records to the database.
 
 ![Contact Page](media/docs/mm-contact-page.png)
 
@@ -278,22 +282,23 @@ The database schema was generated with [django-extensions](https://django-extens
 ### Marketing Research
 
 - Who are our users?
-  - People who are into streetwear fashion and skateboarding.
+  - People who are interested in streetwear fashion and skateboarding.
 
 - Which online platforms would we find lots of our users?
-  - Since the majority of our users are teenagers/young adults, we mostly find them in social media.
+  - Since the majority of our users are teenagers/young adults, we mostly find them on social media.
 
 - Would our users use social media? If yes, which platforms do we think we would find them on?
-  - Absolutely, we can find them on TikTok, Instagram and Facebook.
+  - Mainly on Twitter, TikTok, Instagram, and Facebook.
 
 - What do our users need? Could we meet that need with useful content? If yes, how could we best deliver that content to them?
-  - Quality streetwear fashion apparel and skateboards. We can deliver useful content for instance with fashion tips newsletters, or posts to our social media following.
+  - Quality streetwear fashion apparel and skateboards. We can deliver useful content, for instance with fashion tips newsletters, or posts to our social media following.
 
 - Would our business run sales or offer discounts? How do we think our users would most like to hear about these offers?
-  - Most definitely, our users would like to hear about discounts through social media and newsletters.
+  - Most definitely. Our users would like to hear about discounts through social media and newsletters.
 
-- Would our business have a budget to spend on advertising? Or would it need to work with free or low cost options to market itself?
-  - Since our business is still growing and not quite estabilished yet, for the time being we'd try to grow organically with free social media posts, posting fashion tips/trends on a daily basis.
+- Would our business have a budget to spend on advertising? Or would it need to work with free or low-cost options to market itself?
+  - Since our business is still growing and not fully established yet, for the time being we would try to grow organically with free social media posts, gifting to influencers via social media, posting fashion tips/trends on a daily basis.
+
 
 ### Social Media
 
@@ -303,11 +308,12 @@ The database schema was generated with [django-extensions](https://django-extens
       ![Facebook Page Admin View](media/docs/mm-fb-pg-adm.png)
       ![Facebook Page Users View](media/docs/mm-fb-pg-usr.png)
 
+
 ### Email Marketing
 
 - __Newsletter Subscription Page__
 
-  - Shoppers are able to subscribe to the website's newsletter in order to receive emails with latest merch drops, collections, sales and discounts.
+  - Shoppers are able to subscribe to the website's newsletter in order to receive emails with the latest merch drops, collections, sales, and discounts.
   ![Subscribe Page](media/docs/mm-subscribe-page.png)
 
 - __Mail Newsletter Page__
@@ -327,7 +333,7 @@ The database schema was generated with [django-extensions](https://django-extens
 ### Frameworks, Libraries & Programs Used
 
 - [Balsamiq](https://balsamiq.com/)
-  - Balsamiq was used to make desktop/mobile mockups in order to visualise the project.
+  - Balsamiq was used to make desktop/mobile mock-ups in order to visualise the project.
 - [Bootstrap](https://getbootstrap.com/)
   - Bootstrap template.
 - [Amazon S3](https://aws.amazon.com/s3/)
@@ -355,13 +361,13 @@ The database schema was generated with [django-extensions](https://django-extens
 - [PostgreSQL](https://www.postgresql.org/)
   - PostgreSQL for database management.
 - [Stripe](https://stripe.com/ie)
-  - Stripe for the payments infrastructure.
+  - Stripe for the payments' infrastructure.
 
 ## Testing
 
 - Manual testing:
   
-  - All links, form submissions, admin privileges, user privileges, app functions were throughouly tested and work as intended.
+  - All links, form submissions, admin privileges, user privileges, app functions were tested throughout and work as intended.
 
 ### Testing User Stories
 
@@ -369,19 +375,19 @@ __All user stories were manually tested__
 
 - As a Site User I can register for an account so that I have my personal account information.
   - User clicks on the navigation bar's icon "My Account", "Register".
-  - User fills out sign up form (validation in place), press sign up.
+  - User fills out the sign up form (validation in place), press sign up.
   - The page and a toast message tell the user a confirmation email was sent.
   - User checks their email inbox and click on the link to confirm the email.
-  - User is finally fully registered and able to login.
+  - User is now fully registered and able to login.
 
-- As Site User I can login/logout of my account so that I have access to my account profile details and previous orders.
-  - Users are able to log in clicking on the navigation bar's icon "My Account", "Login/Logout" and view previous orders in the profile tab in the "My Account", "My Profile".
+- As a Site User I can login/logout of my account so that I have access to my account profile details and previous orders.
+  - Users are able to log in by clicking on the navigation bar's icon "My Account", "Login/Logout" and view previous orders in the profile tab in the "My Account", "My Profile".
 
 - As a Site User I can recover my password in case I forget it so that I can regain access to my account.
   - User goes to the login page.
   - User clicks on "Forgot Password?"
-  - User fills out their email address and click on "Reset My Password".
-  - User checks their email inbox and click on the link to reset and choose a new password.
+  - User fills out their email address and clicks on "Reset My Password".
+  - User checks their email inbox and clicks on the link to reset and choose a new password.
 
 - As a Site User I can personalise the user profile so that I can view my order history/confirmations/save my billing information.
   - Users clicks on the navigation bar's icon "My Account", "My Profile" and view order history/confirmation/save billing address.
@@ -394,10 +400,10 @@ __All user stories were manually tested__
   - From the products page, user clicks on any product and will be brought out to the product's detail page, including the product description, rating, picture and sizes available.
 
 - As a Shopper I can see my cart total anytime so that I can be within budget.
-  - The navbar features a cart icon which reflects in real-time the current state of their cart once a user adds/removes/updates any cart items, the price changes.
+  - The nav bar features a cart icon which reflects in real-time the current state of their cart once a user adds/removes/updates any cart items, the price changes.
 
 - As a Shopper I can view a category of a product so that I can easily find a product I'm interested in without having to browse too much.
-  - User clicks on "Clothing" or "Skateboards" and can click on a specific category.
+  - User clicks on "Clothing" or "Skateboards" and a sub-menu expands, then the user can click on a specific category.
 
 - As a Shopper I can sort the products' list so that I can sort products by specific filters.
   - User clicks on "All Products" and from there can select by price, rating, category or all products.
@@ -421,8 +427,8 @@ __All user stories were manually tested__
 - As a Shopper I can update the amount of items in my cart so that I can make adjustments before checking out.
   - On the cart page, users are able to update quantity or delete any products which are currently in their cart.
 
-- As a Shopper I can put my card details with ease so that I can quickly checkout.
-  - On the checkout page, users are prompted wich a form where they fill out their personal and delivery details, and the card number (all through HTTPS) and Stripe handles the payment securely.
+- As a Shopper I can input my card details with ease so that I can quickly checkout.
+  - On the checkout page, users are prompted with a form where they fill out their personal and delivery details, and the card number (all through HTTPS) and Stripe handles the payment securely.
 
 - As a Shopper I can safely input my details so that my details are secure.
   - The website uses Hypertext Transfer Protocol Secure and also Stripe payments infrastructure to handle the payment.
@@ -430,20 +436,20 @@ __All user stories were manually tested__
 - As a Shopper I can view my order and confirmation of the order after checking out so that I can double-check the order is correct.
   - As soon as a user completes the order, they are redirected to the Checkout Success page, with their order information, the order is also saved to their Profile page.
 
-- As a Shopper I can get an email confirmation of my order so that I can keep for my records.
+- As a Shopper I can get an email confirmation of my order which I can keep for my records.
   - As soon as a user completes the order, they will receive a confirmation email from the shop, containing their order information.
 
 - As a Site Admin I can add a product so that I can keep the inventory updated with new merch.
   - Superusers are able to view a page called "Product Management", where they are able to add new products to the site straight from the frontend via a form.
 
 - As a Site Admin I can update a product so that I can change the price/image/description/name.
-  - Once a superuser is logged in, they are able to see an "Edit" link right under each product from the Products Page, where they are able to update any product.
+  - Once a superuser is logged in, they are able to see an "Edit" link underneath each product from the Products Page, where they are able to update any product.
 
-- As a Site Admin I can delete a product so that I can delete items which I no longer wish to sell.
-  - Once a superuser is logged in, they are able to see an "Delete" link right under each product from the Products Page, where they are able to delete any product.
+- As a Site Admin I can delete a product therefore deleting items which I no longer wish to sell.
+  - Once a superuser is logged in, they are able to see a "Delete" link underneath each product from the Products Page, where they are able to delete any product.
 
-- As a Site User I can see a custom 404 page so that I'm not confused on why I didn't land on the page I had intended to.
-  - The website features a clear custom 404 page which displays a big heading stating "THE PAGE YOU ARE LOOKING FOR ISN'T AVAILABLE", and a CTA button right under it "RETURN TO SHOP".
+- As a Site User I can see a custom 404 page so that I'm not confused as to why I didn't land on the page I had intended to.
+  - The website features a clear custom 404 page which displays a big heading stating "THE PAGE YOU ARE LOOKING FOR ISN'T AVAILABLE", and a CTA button underneath it "RETURN TO SHOP".
 
 - As a Shopper/Potential Shopper I can find a contact page so that I can easily contact the shop with any questions/concerns.
   - Users are able to contact the shop clicking on the permanent navigation bar Contact Page link.
@@ -453,22 +459,23 @@ __All user stories were manually tested__
   - Users are able to subscribe to the shop's newsletter by clicking on the permanent navigation bar "Subscribe" link.
   - Once there, users are able to input their email and subscribe to the shop's newsletter.
 
-- As a Shop Owner I can link a privacy policy so that shoppers know how their data is collected and processed.
+- As a Shopper I can see a privacy policy link so that I am aware of how my data is being collected and processed.
   - The footer area consists of a permanent "Privacy Policy" link to the site's Privacy Policy, where users can click on it (opens in a new tab) and learn more about it.
 
 - As a Site Owner I can improve my SEO so that I improve my search engine ranking.
-  - The website contains a sitemap.xml file, a robots.txt file, meta description tag and a meta keyword tag, with a mix of short and longtail keywords.
+  - The website contains a sitemap.xml file, a robots.txt file, meta description tag and a meta keyword tag, with a mix of short and long-tail keywords.
 
-- As a Shop Owner I can create a FB business page so that I can gain more traction from socials.
+- As a Shop Owner I can create a Facebook business page so that I can gain more traction from socials.
   - The website features social icons in the footer area, if a user clicks on the Facebook icon, it brings them to the shop's FB Business Page.
 
 - As a Shopper I can see a FAQ page so that I can find the most frequently asked questions, without having to contact the shop.
-  - Users are able to read the shop's most Frequently Asked Questions by clicking on the permanent navigation bar "FAQ" link.
-  - At the page there's an accordion with the questions and answers.
+  - Users are able to read the shop's Frequently Asked Questions by clicking on the permanent navigation bar "FAQ" link.
+  - On this page there's an accordion with the questions and answers.
 
-- As a Shopper I can see an about page from the shop so that I can learn more about its story, and gain trust from the brand.
-  - Users are able to learn more about the the shop clicking on the permanent navigation bar "About" page link.
+- As a Shopper I can see an "About" page from the shop so that I can learn more about its story, and gain trust from the brand.
+  - Users are able to learn more about the shop by clicking on the permanent navigation bar "About" page link.
   - Once there, users can read more about the website's brand story/mission/ethos.
+
 
 ### Validator Testing
 
@@ -514,7 +521,7 @@ __All user stories were manually tested__
   ![JShint Back to Top Button](media/docs/mm-jshint-backtotopbtn.png)
 
 - Python
-    - No errors were returned when passing through the [online PEP8 checker.](http://pep8online.com/), except for the webhook_handler.py (please see screenshot in the checkout app), which returned one E501 warning, line too long (81 > 79 characters), I wasn't able to do a line break without breaking the code.
+    - No errors were returned when passing through the [online PEP8 checker](http://pep8online.com/) - except for the webhook_handler.py (please see screenshot in the checkout app), which returned one E501 warning, line too long (81 > 79 characters), I wasn't able to do a line break without breaking the code.
       - melo_merch:
       ![melo_merch urls](media/docs/mm-melo-merch-urls.png)
       ![melo_merch views](media/docs/mm-melo-merch-views.png)
@@ -576,7 +583,7 @@ __All user stories were manually tested__
 ### Responsive Testing
 
 - __[Am I Responsive?](http://ami.responsivedesign.is/)__
-  - This design tool was used to show how responsive the website is and looks across 4 different viewports (Desktop, Laptop, Tablet and Mobile):
+  - This design tool was used to show how responsive the website is and looks across 4 different viewports (Desktop, Laptop, Tablet, and Mobile):
 ![Responsive Melo Merch](media/docs/mm-responsiveness.png)
 
 ### Device Testing
@@ -600,7 +607,11 @@ __All user stories were manually tested__
 
 ### Known Bugs
 
-- When a registered user/shopper who's already previously made a purchase and have saved their profile section's details within “Default Delivery Information” in “My Profile” page make a new purchase, for some reason in the checkout page's form their details aren't pre-populating with some of their delivery information.
+- If a registered user/shopper who has previously made a purchase (and who's saved their profile section's details within “Default Delivery Information” in the “My Profile” page) decides to make a new purchase, for some reason in that new purchase's Checkout Page's form their details aren't pre-populating with some of their delivery information.
+
+### A Note
+
+- I diligently chose only stock images (though with different dimensions/orientations). I was given feedback by my mentor to override Bootstrap's "img-fluid" class' and input a set height (the default height value is auto), to make sure all Bootstrap image cards aligned correctly (as the stock photos have different dimensions/orientations), [this change was implemented](https://github.com/richardreiter/melo-merch/commit/5d8561b8cd790e6f43bbbd7e8a9bb7211cf0cef6), however as a result some product images may seem warped.
 
 ## Deployment
 
@@ -687,8 +698,8 @@ How to run this project locally:
 ### Media
 
 - All the website's images were taken from [Unsplash.](https://unsplash.com/)
-- Some of the FAQ page's content was inspired from [asos](https://www.asos.com/customer-care/).
-- Some of the About page's content was inspired from [HBX](https://hbx.com/about).
+- Some of the FAQ page's content was inspired by [Asos](https://www.asos.com/customer-care/).
+- Some of the About page's content was inspired by [HBX](https://hbx.com/about).
 
 ### Other
 
