@@ -1,1 +1,0 @@
-web: gunicorn melo_merch.wsgi:application
