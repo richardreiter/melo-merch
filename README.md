@@ -4,7 +4,7 @@
 
 ![Responsive Melo Merch](media/docs/mm-responsiveness.png)
 
-Visit the live site [here.](https://melo-merch.herokuapp.com/)
+Visit the live site [here.](https://melo-merch.onrender.com/)
 
 ## UX (User Experience)
 
@@ -353,12 +353,16 @@ The database schema was generated with [django-extensions](https://django-extens
 - [Google Fonts](https://fonts.google.com/)
   - Google Fonts was used to import the font which is used on the website.
 - [Heroku](https://heroku.com/)
-  - Heroku was used for hosting and deploying the application.
+  - Heroku was used originally for hosting and deploying the website.
+- [Render](https://render.com/)
+  - The project was then migrated from Heroku to Render.
 - [Django-extensions](https://django-extensions.readthedocs.io/en/latest/index.html)
    - The database schema was generated with [django-extensions](https://django-extensions.readthedocs.io/en/latest/index.html) [Graph models.](https://django-extensions.readthedocs.io/en/latest/graph_models.html)
 - [Django-pandas](https://pypi.org/project/django-pandas/)
   - Pandas was used to help manipulate data to mail the newsletters to the site's subscribers.
 - [PostgreSQL](https://www.postgresql.org/)
+  - PostgreSQL for database management.
+- [ElephantSQL](https://www.elephantsql.com/)
   - PostgreSQL for database management.
 - [Stripe](https://stripe.com/ie)
   - Stripe for the payments' infrastructure.
